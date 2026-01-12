@@ -25,7 +25,7 @@ namespace GAG.EasyVideo
         { CurrentVideoEnded?.Invoke(videoType); }
 
         [Header("Config")]
-        [SerializeField] string _configFile = "video_config.json";
+        [SerializeField] string _configFile = "EasyVideo/video_config.json";
         VideoConfig _config;
 
         [Header("Video Transition")]
