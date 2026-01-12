@@ -25,7 +25,7 @@ namespace GAG.EasyVideo
         { CurrentVideoEnded?.Invoke(videoType); }
 
         [Header("Config")]
-        [SerializeField] string _configFile = "EasyVideo/video_config.json";
+        string _configFile = "EasyVideo/video_config.json";
         VideoConfig _config;
 
         [Header("Video Transition")]
@@ -44,8 +44,8 @@ namespace GAG.EasyVideo
         int _lastScreenHeight;
 
         [Header("Folders (inside StreamingAssets)")]
-        [SerializeField] string _idleFolder = "";
-        [SerializeField] string _actionFolder = "";
+        string _idleFolder = "";
+        string _actionFolder = "";
 
         [Header("Action Videos")]
         [SerializeField] List<EasyVideoModel> _actionVideos = new();
