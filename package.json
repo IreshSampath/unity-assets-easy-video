@@ -9,8 +9,7 @@
   "changelogUrl": "https://github.com/IreshSampath/unity-assets-easy-video/blob/main/CHANGELOG.md",
   "licensesUrl": "https://github.com/IreshSampath/unity-assets-easy-video/blob/main/LICENSE",
   "dependencies": {
-    "com.unity.textmeshpro": "3.0.6",
-    "com.unity.video": "1.0.0"
+    "com.unity.textmeshpro": "3.0.6"
   },
   "relatedPackages": {
     "com.unity.textmeshpro@5.0.0": {
