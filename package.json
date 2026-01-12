@@ -1,0 +1,44 @@
+﻿{
+  "name": "com.ireshsampath.unity-assets.easy-video",
+  "version": "1.0.0",
+  "displayName": "EasyVideo",
+  "description": "EasyVideo is a Unity package that simplifies video playback workflows. It provides an easy-to-use manager for idle and action videos, smooth transitions, looping control, and runtime video selection using Unity VideoPlayer.",
+  "unity": "2022.3",
+  "unityRelease": "0f1",
+  "documentationUrl": "https://github.com/IreshSampath/unity-assets-easy-video/blob/main/README.md",
+  "changelogUrl": "https://github.com/IreshSampath/unity-assets-easy-video/blob/main/CHANGELOG.md",
+  "licensesUrl": "https://github.com/IreshSampath/unity-assets-easy-video/blob/main/LICENSE",
+  "dependencies": {
+    "com.unity.textmeshpro": "3.0.6",
+    "com.unity.video": "1.0.0"
+  },
+  "relatedPackages": {
+    "com.unity.textmeshpro@5.0.0": {
+      "version": "5.0.0",
+      "unity": "6000.0",
+      "unityRelease": "0f1"
+    }
+  },
+  "samples": [
+    {
+      "displayName": "EasyVideo Sample",
+      "description": "Example scene demonstrating idle/action video playback, transitions, looping behavior, and runtime video switching by Index or using Id.",
+      "path": "Samples~/Sample 1"
+    }
+  ],
+  "keywords": [
+    "video",
+    "video player",
+    "media",
+    "idle video",
+    "action video",
+    "transition",
+    "render texture",
+    "streamingassets"
+  ],
+  "author": {
+    "name": "Iresh Sampath",
+    "email": "ireshsampath@gmail.com",
+    "url": "https://www.linkedin.com/in/ireshsampath/"
+  }
+}
