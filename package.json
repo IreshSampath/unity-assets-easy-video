@@ -1,6 +1,6 @@
 ﻿{
   "name": "com.ireshsampath.unity-assets.easy-video",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "EasyVideo",
   "description": "EasyVideo is a Unity package that simplifies video playback workflows. It provides an easy-to-use manager for idle and action videos, smooth transitions, looping control, and runtime video selection using Unity VideoPlayer.",
   "unity": "2022.3",
