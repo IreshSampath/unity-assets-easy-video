@@ -34,4 +34,9 @@ public class EasyVideoDemo : MonoBehaviour
     {
         EasyVideoManager.RaiseActionVideoIdChanged(id);
     }
+
+    public void TriggerGoIdle()
+    {
+        EasyVideoManager.Instance.TriggerGoIdle();
+    }
 }

@@ -53,6 +53,7 @@ namespace GAG.EasyVideo
         List<string> _idleVideoPaths = new();
         int _idleIndex;
         [SerializeField] bool _isIdleLoop = true;
+        [SerializeField] bool _allowExternalIdleTrigger = true;
         [SerializeField] bool _isGoIdle = true;
         bool _isIdleMode = true;
 
@@ -139,6 +140,7 @@ namespace GAG.EasyVideo
             _idleFolder = _config.idle.folder;
             _isIdleLoop = _config.idle.loop;
             _isGoIdle = _config.idle.returnAfterAction;
+            _allowExternalIdleTrigger = _config.idle.allowExternalTrigger;
 
             _actionFolder = _config.actions.folder;
             _actionVideos = _config.actions.videos;
@@ -193,6 +195,17 @@ namespace GAG.EasyVideo
             _idleIndex = (_idleIndex + 1) % _idleVideoPaths.Count;
             //AppManager.RaiseIdleChanged(_idleIndex);
             StartCoroutine(PlayUrlDelayed(_idleVideoPaths[_idleIndex], false));
+        }
+
+        public void TriggerGoIdle()
+        {
+            if (!_allowExternalIdleTrigger)
+            {
+                Debug.LogWarning("External idle trigger is disabled");
+                return;
+            }
+
+            ReturnToIdle();
         }
 
         void OnVideoFinished(VideoPlayer vp)

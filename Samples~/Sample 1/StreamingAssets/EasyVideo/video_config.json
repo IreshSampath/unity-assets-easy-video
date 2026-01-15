@@ -2,24 +2,25 @@
   "idle": {
     "folder": "EasyVideo/Videos/Idle",
     "loop": true,
-    "returnAfterAction": true
+    "returnAfterAction": true,
+	"allowExternalTrigger": true
   },
   "actions": {
     "folder": "EasyVideo/Videos/Actions",
     "videos": [
       {
         "Id": "v1",
-        "FileName": "1.mp4",
+        "FileName": "Action_1.mp4",
         "Loop": false
       },
       {
         "Id": "v2",
-        "FileName": "3.mp4",
+        "FileName": "Action_2.mp4",
         "Loop": true
       },
       {
         "Id": "v3",
-        "FileName": "11.mp4",
+        "FileName": "Action_3.mp4",
         "Loop": false
       }
     ]

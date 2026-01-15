@@ -13,6 +13,7 @@ public class IdleConfig
     public string folder;
     public bool loop;
     public bool returnAfterAction;
+    public bool allowExternalTrigger;
 }
 
 [System.Serializable]
