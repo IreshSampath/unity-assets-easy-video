@@ -383,52 +383,6 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
---- !u!1 &586910688
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 586910690}
-  - component: {fileID: 586910689}
-  m_Layer: 0
-  m_Name: EasyVideoDemo
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &586910689
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 586910688}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b6acffec9824a04392bceec321a3109, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EasyVideoDemo
-  _screenIndex: 0
-  _resolutionHandler: {fileID: 1195881980}
---- !u!4 &586910690
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 586910688}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 759.6788, y: 495.98807, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -478,17 +432,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1195881980 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8346436155387067688, guid: 297d70859d2236749a1c8d2429e80bd2, type: 3}
-  m_PrefabInstance: {fileID: 1989052279607415574}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac1240d1dda040649b271bb46ede023d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: EasyVideoAssembly::EasyVideoResolutionHandler
 --- !u!1001 &1989052279607415574
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -537,30 +480,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1020431973436107145, guid: 297d70859d2236749a1c8d2429e80bd2, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 586910689}
-    - target: {fileID: 1594680604841201389, guid: 297d70859d2236749a1c8d2429e80bd2, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 586910689}
-    - target: {fileID: 4253213490937397011, guid: 297d70859d2236749a1c8d2429e80bd2, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 586910689}
-    - target: {fileID: 4907931613727513274, guid: 297d70859d2236749a1c8d2429e80bd2, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 586910689}
-    - target: {fileID: 6499636181830490241, guid: 297d70859d2236749a1c8d2429e80bd2, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 586910689}
-    - target: {fileID: 8013617361804134672, guid: 297d70859d2236749a1c8d2429e80bd2, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 586910689}
     - target: {fileID: 9143228536713677954, guid: 297d70859d2236749a1c8d2429e80bd2, type: 3}
       propertyPath: m_Name
       value: EasyVideo
@@ -578,4 +497,3 @@ SceneRoots:
   - {fileID: 832575519}
   - {fileID: 330585546}
   - {fileID: 1989052279607415574}
-  - {fileID: 586910690}
