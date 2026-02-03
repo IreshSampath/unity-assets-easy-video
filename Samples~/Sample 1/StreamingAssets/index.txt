@@ -1,0 +1,4 @@
+video_config.json
+Videos/Idle/Idle_1.mp4
+Videos/Actions/Action_1.mp4
+Videos/Actions/Action_2.mp4

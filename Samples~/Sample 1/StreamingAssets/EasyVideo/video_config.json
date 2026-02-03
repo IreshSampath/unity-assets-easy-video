@@ -1,12 +1,14 @@
 {
   "idle": {
-    "folder": "EasyVideo/Videos/Idle",
+    "folder": "Videos/Idle",
     "loop": true,
     "returnAfterAction": true,
-	"allowExternalTrigger": true
+    "allowExternalTrigger": true,
+    "allowTransition": true
   },
   "actions": {
-    "folder": "EasyVideo/Videos/Actions",
+    "folder": "Videos/Actions",
+    "allowTransition": true,
     "videos": [
       {
         "Id": "v1",

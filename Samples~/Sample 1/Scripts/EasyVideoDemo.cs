@@ -3,40 +3,60 @@ using UnityEngine;
 
 public class EasyVideoDemo : MonoBehaviour
 {
-    void OnEnable()
+    [Header("Target Screen")]
+    [SerializeField] int _screenIndex = 0;
+    
+    [Header("Resolution")]
+    [SerializeField] EasyVideoResolutionHandler _resolutionHandler;
+    
+    // -------------------------------------------------
+    // Resolution
+    // -------------------------------------------------
+    public void SetAutoResolution()
     {
-        EasyVideoManager.CurrentVideoEnded += OnCurrentVideoEnded;
+        _resolutionHandler.SetResolutionAuto();
     }
 
-    void OnDisable()
+    public void ReduceResolution()
     {
-        EasyVideoManager.CurrentVideoEnded -= OnCurrentVideoEnded;
+        _resolutionHandler.ReduceResolution(0.5f); // low-end tablets
     }
 
-    void OnCurrentVideoEnded(int videoMode)
+    public void SetManualResolution(int width, int height)
     {
-        if (videoMode == 0)
-        {
-            Debug.Log("Current idle video ended.");
-        }
-        else
-        {
-            Debug.Log("Current action video ended.");
-        }
+        _resolutionHandler.SetResolutionManual(1280, 720);
+    }
+    // -------------------------------------------------
+    // ACTIONS
+    // -------------------------------------------------
+
+    public void PlayActionById(string id)
+    {
+        if (EasyVideoManager.Instance == null)
+            return;
+
+        EasyVideoManager.Instance.PlayActionById(id, _screenIndex);
     }
 
-    public void PlayVideoByIndex(int index)
+    public void PlayActionByIndex(int index)
     {
-        EasyVideoManager.RaiseActionVideoIndexChanged(index);
+        if (EasyVideoManager.Instance == null)
+            return;
+
+        // Simple helper for demo usage
+        var actionId = $"v{index + 1}";
+        EasyVideoManager.Instance.PlayActionById(actionId, _screenIndex);
     }
 
-    public void PlayVideoById(string id)
-    {
-        EasyVideoManager.RaiseActionVideoIdChanged(id);
-    }
+    // -------------------------------------------------
+    // IDLE
+    // -------------------------------------------------
 
-    public void TriggerGoIdle()
+    public void PlayIdle()
     {
-        EasyVideoManager.Instance.TriggerGoIdle();
+        if (EasyVideoManager.Instance == null)
+            return;
+
+        EasyVideoManager.Instance.PlayIdleOnAllScreens();
     }
 }

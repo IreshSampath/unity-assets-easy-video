@@ -14,11 +14,13 @@ public class IdleConfig
     public bool loop;
     public bool returnAfterAction;
     public bool allowExternalTrigger;
+    public bool allowTransition;
 }
 
 [System.Serializable]
 public class ActionConfig
 {
     public string folder;
+    public bool allowTransition;
     public List<EasyVideoModel> videos;
 }
