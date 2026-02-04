@@ -9,9 +9,9 @@ namespace EasyVideo
     /// Resolves external video storage paths and ensures
     /// default videos are installed only once.
     /// </summary>
-    public class EasyVideoExternalStorageProvider : MonoBehaviour
+    public class EasyVideoStorageProvider : MonoBehaviour
     {
-        public static EasyVideoExternalStorageProvider Instance { get; private set; }
+        public static EasyVideoStorageProvider Instance { get; private set; }
 
         [Header("Root Folder Name")]
         [SerializeField] string _rootFolderName = "EasyVideo";

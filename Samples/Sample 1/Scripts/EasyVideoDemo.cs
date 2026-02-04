@@ -9,6 +9,11 @@ public class EasyVideoDemo : MonoBehaviour
     [Header("Resolution")]
     [SerializeField] EasyVideoResolutionHandler _resolutionHandler;
     
+    public void SetCustomRoot(string root)
+    {
+        PlayerPrefs.SetString("EasyVideoRoot", root);
+    }
+    
     // -------------------------------------------------
     // Resolution
     // -------------------------------------------------

@@ -448,7 +448,7 @@ GameObject:
   - component: {fileID: 3550324757055458061}
   - component: {fileID: 2924611226628736795}
   m_Layer: 0
-  m_Name: EasyVideoDemo
+  m_Name: EasyVideo Demo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2170,6 +2170,52 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &2452379269056616769
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1906718273078935027}
+  - component: {fileID: 3403703386008504901}
+  m_Layer: 0
+  m_Name: EasyVideo Storage Provider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1906718273078935027
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2452379269056616769}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1367.548, y: 1046.351, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 619740252970948255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3403703386008504901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2452379269056616769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40000965c51ed7f42b324ff757d882ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: EasyVideoAssembly::EasyVideo.EasyVideoExternalStorageProvider
+  _rootFolderName: EasyVideo
+  _defaultContentFolder: EasyVideo
 --- !u!1 &2474427680264136539
 GameObject:
   m_ObjectHideFlags: 0
@@ -6939,6 +6985,7 @@ Transform:
   m_Children:
   - {fileID: 6833007989893411131}
   - {fileID: 5472706523796564126}
+  - {fileID: 1906718273078935027}
   - {fileID: 1363704415771467241}
   - {fileID: 386547999213742084}
   - {fileID: 6412156855604299105}
